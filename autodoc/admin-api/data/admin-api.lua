@@ -1167,6 +1167,14 @@ return {
           description = [[PEM-encoded private key of the SSL key pair.]],
           example = "-----BEGIN RSA PRIVATE KEY-----..."
         },
+        cert_alt = {
+          description = [[PEM-encoded public certificate chain of the alternate SSL key pair.]],
+          example = "-----BEGIN CERTIFICATE-----...",
+        },
+        key_alt = {
+          description = [[PEM-encoded private key of the alternate SSL key pair.]],
+          example = "-----BEGIN EC PRIVATE KEY-----..."
+        },
         tags = {
           description = [[
             An optional set of strings associated with the Certificate for grouping and filtering.
