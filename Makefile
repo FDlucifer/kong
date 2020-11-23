@@ -123,9 +123,8 @@ dependencies: bin/grpcurl
 	done;
 
 bin/grpcurl:
-	@curl -s -S -L \
-		https://github.com/fullstorydev/grpcurl/releases/download/v1.3.0/grpcurl_1.3.0_$(GRPCURL_OS)_$(MACHINE).tar.gz | tar xz -C bin;
-	@rm bin/LICENSE
+	go get -v github.com/fullstorydev/grpcurl
+	@cp $(GOPATH)/bin/grpcurl bin/
 
 dev: remove install dependencies
 
